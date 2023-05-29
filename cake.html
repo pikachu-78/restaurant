@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakes</title>
+    <link rel="stylesheet" href="food-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .food{
+            height: 230vh;
+            background: linear-gradient(rgba(12,11,9,0.5),rgba(12,11,9,0.5)),url("home-images/cake-home.jpg");
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <section class="food">
+
+        <!--======= Header Section ======-->
+
+        <header>
+            <h1>Cakes</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="veg.html">Veg</a></li>
+                    <li><a href="non-veg.html">Non-Veg</a></li>
+                    <li><a href="ice-cream.html">Ice-Creams</a></li>
+                    <li><a href="milkshake.html">Milkshakes</a></li>
+                    <li><a href="juice.html">Juices</a></li>
+                    <li><a href="cake.html">Cakes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <button class="btn-cart">Cart
+                        <i class="fa fa-cart-plus" id="cart-icon"></i>
+                    </button>
+                    <div class="cart-count">0</div>                    
+                </ul>
+            </nav>
+            
+            <!--======= Cart Section ======-->
+
+            <div class="cart">
+                <div class="cart-title">Cart items</div>
+                <div class="cart-content">
+                    <!-- <div class="cart-box">
+                        <img src="veg-images/carrotrice2.jfif" class="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-food-title">Carrot Rice</div>
+                            <div class="price-box">
+                                <div class="cart-price">Rs.130</div>
+                                <div class="cart-amt">Rs.130</div>
+                            </div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <i class="fa fa-trash cart-remove"></i>
+                    </div>
+
+                    <div class="cart-box">
+                        <img src="veg-images/chanamasala.jfif" class="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-food-title">Carrot Rice</div>
+                            <div class="price-box">
+                                <div class="cart-price">Rs.260</div>
+                                <div class="cart-amt">Rs.260</div>
+                            </div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <i class="fa fa-trash cart-remove"></i>
+                    </div> -->
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">Rs.0</div>
+                </div>
+                <button class="btn-buy">Place Order</button>
+                <i class="fa fa-close" id="cart-close"></i>
+            </div>
+
+        </header>
+
+        <!--======= Food Section ======-->
+
+        <div class="container">
+            <div class="food-box">
+                <img src="cake-images/blackcurrant.jfif" class="food-img">
+                <h2 class="food-title">Black Currant</h2>
+                <h3 class="food-price">Rs.850.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="cake-images/blackforest.jfif" class="food-img">
+                <h2 class="food-title">Black Forest</h2>
+                <h3 class="food-price">Rs.1000.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="cake-images/blueberry.jfif" class="food-img">
+                <h2 class="food-title">Blue berry</h2>
+                <h3 class="food-price">Rs.1200.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="cake-images/blue-velvet.jpeg" class="food-img">
+                <h2 class="food-title">Blue Velvet</h2>
+                <h3 class="food-price">Rs.1300.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="cake-images/butterscotch.jfif" class="food-img">
+                <h2 class="food-title">Butterscotch</h2>
+                <h3 class="food-price">Rs.1100.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="cake-images/chiffon.jfif" class="food-img">
+                <h2 class="food-title">Chiffon</h2>
+                <h3 class="food-price">Rs.1500.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="cake-images/chocmousse.jfif" class="food-img">
+                <h2 class="food-title">Chaco Mousse</h2>
+                <h3 class="food-price">Rs.1800.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="cake-images/choctruffle.jfif" class="food-img">
+                <h2 class="food-title">Chaco Truffle</h2>
+                <h3 class="food-price">Rs.1900.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="cake-images/lava.jfif" class="food-img">
+                <h2 class="food-title">Lava</h2>
+                <h3 class="food-price">Rs.1200.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="cake-images/lollipop.jfif" class="food-img">
+                <h2 class="food-title">Lollipop</h2>
+                <h3 class="food-price">Rs.1300.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="cake-images/mirrorglaze.jfif" class="food-img">
+                <h2 class="food-title">Mirror GLaze</h2>
+                <h3 class="food-price">Rs.1500.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="cake-images/pinata.jfif" class="food-img">
+                <h2 class="food-title">Pinata</h2>
+                <h3 class="food-price">Rs.2000.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="cake-images/pineapple.jfif" class="food-img">
+                <h2 class="food-title">Pineapple</h2>
+                <h3 class="food-price">Rs.1400.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="cake-images/rainbow.jfif" class="food-img">
+                <h2 class="food-title">Rainbow</h2>
+                <h3 class="food-price">Rs.1400.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="cake-images/redvelvet.jfif" class="food-img">
+                <h2 class="food-title">Red Velvet</h2>
+                <h3 class="food-price">Rs.2100.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="cake-images/strawberry.jfif" class="food-img">
+                <h2 class="food-title">Strawberry</h2>
+                <h3 class="food-price">Rs.2000.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="cake-images/tiramisu.jfif" class="food-img">
+                <h2 class="food-title">Tiramisu</h2>
+                <h3 class="food-price">Rs.1900.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="cake-images/vanilla.jfif" class="food-img">
+                <h2 class="food-title">Vanilla</h2>
+                <h3 class="food-price">Rs.1400.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="cake-images/whiteforest.jfif" class="food-img">
+                <h2 class="food-title">White Forest</h2>
+                <h3 class="food-price">Rs.2500.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!--======= Script File ======-->
+    <script src="javascript/script.js"></script>
+</body>
+</html>

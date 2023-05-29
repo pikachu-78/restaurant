@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non-Veg Foods</title>
+    <link rel="stylesheet" href="food-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .food{
+            height: 230vh;
+            background: linear-gradient(rgba(12,11,9,0.5),rgba(12,11,9,0.5)),url("home-images/non-veg-home.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <section class="food">
+
+        <!--======= Header Section ======-->
+
+        <header>
+            <h1>Non-Vegetarian Foods</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="veg.html">Veg</a></li>
+                    <li><a href="non-veg.html">Non-Veg</a></li>
+                    <li><a href="ice-cream.html">Ice-Creams</a></li>
+                    <li><a href="milkshake.html">Milkshakes</a></li>
+                    <li><a href="juice.html">Juices</a></li>
+                    <li><a href="cake.html">Cakes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <button class="btn-cart">Cart
+                        <i class="fa fa-cart-plus" id="cart-icon"></i>
+                    </button>
+                    <div class="cart-count">0</div>                    
+                </ul>
+            </nav>
+            
+            <!--======= Cart Section ======-->
+
+            <div class="cart">
+                <div class="cart-title">Cart items</div>
+                <div class="cart-content">
+                    <!-- <div class="cart-box">
+                        <img src="veg-images/carrotrice2.jfif" class="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-food-title">Carrot Rice</div>
+                            <div class="price-box">
+                                <div class="cart-price">Rs.130</div>
+                                <div class="cart-amt">Rs.130</div>
+                            </div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <i class="fa fa-trash cart-remove"></i>
+                    </div>
+
+                    <div class="cart-box">
+                        <img src="veg-images/chanamasala.jfif" class="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-food-title">Carrot Rice</div>
+                            <div class="price-box">
+                                <div class="cart-price">Rs.260</div>
+                                <div class="cart-amt">Rs.260</div>
+                            </div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <i class="fa fa-trash cart-remove"></i>
+                    </div> -->
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">Rs.0</div>
+                </div>
+                <button class="btn-buy">Place Order</button>
+                <i class="fa fa-close" id="cart-close"></i>
+            </div>
+
+        </header>
+
+        <!--======= Food Section ======-->
+
+        <div class="container">
+            <div class="food-box">
+                <img src="nonveg-images/beefchukka1.jfif" class="food-img">
+                <h2 class="food-title">Beef Chukka</h2>
+                <h3 class="food-price">Rs.250.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="nonveg-images/butterchicken1.jfif" class="food-img">
+                <h2 class="food-title">Butter Chicken</h2>
+                <h3 class="food-price">Rs.230.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="nonveg-images/chicken65.jfif" class="food-img">
+                <h2 class="food-title">Chicken 65</h2>
+                <h3 class="food-price">Rs.160.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="nonveg-images/chickenbiriyani1.jfif" class="food-img">
+                <h2 class="food-title">Chicken Biriyani</h2>
+                <h3 class="food-price">Rs.300.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="nonveg-images/chickenchukka1.jfif" class="food-img">
+                <h2 class="food-title">Chicken Chukka</h2>
+                <h3 class="food-price">Rs.250.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="nonveg-images/chickenkabab.jfif" class="food-img">
+                <h2 class="food-title">Chicken Kabab</h2>
+                <h3 class="food-price">Rs.250.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="nonveg-images/chickenlegpiece.jfif" class="food-img">
+                <h2 class="food-title">Chicken legpiece</h2>
+                <h3 class="food-price">Rs.250.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="nonveg-images/chickenlollipop2.jfif" class="food-img">
+                <h2 class="food-title">Chicken Lollipop</h2>
+                <h3 class="food-price">Rs.300.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="nonveg-images/chilliegg.jfif" class="food-img">
+                <h2 class="food-title">Chilli Egg</h2>
+                <h3 class="food-price">Rs.240.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="nonveg-images/eggbhurji.jfif" class="food-img">
+                <h2 class="food-title">Egg Bhurji</h2>
+                <h3 class="food-price">Rs.160.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="nonveg-images/eggbiriyani.jfif" class="food-img">
+                <h2 class="food-title">Egg Biriyani</h2>
+                <h3 class="food-price">Rs.250.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="nonveg-images/friedfish1.jfif" class="food-img">
+                <h2 class="food-title">Fish Fry</h2>
+                <h3 class="food-price">Rs.350.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="nonveg-images/friedfish2.jfif" class="food-img">
+                <h2 class="food-title">Big Fish fry</h2>
+                <h3 class="food-price">Rs.380.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="veg-images/palakpaneer.jfif" class="food-img">
+                <h2 class="food-title">Palak Paneer</h2>
+                <h3 class="food-price">Rs.350.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="nonveg-images/grilledchikken1.jfif" class="food-img">
+                <h2 class="food-title">Grilled Chicken</h2>
+                <h3 class="food-price">Rs.350.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="nonveg-images/muttonbiriyani1.jfif" class="food-img">
+                <h2 class="food-title">Mutton Biriyani</h2>
+                <h3 class="food-price">Rs.400.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="nonveg-images/muttonchukka1.jfif" class="food-img">
+                <h2 class="food-title">Mutton Chukka</h2>
+                <h3 class="food-price">Rs.350.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="nonveg-images/muttongravy1.jfif" class="food-img">
+                <h2 class="food-title">Mutton Gravy</h2>
+                <h3 class="food-price">Rs.500.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="nonveg-images/muttonpepper1.jfif" class="food-img">
+                <h2 class="food-title">Mutton Pepper</h2>
+                <h3 class="food-price">Rs.550.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="nonveg-images/tandoorichicken1.jfif" class="food-img">
+                <h2 class="food-title">Tandoori chicken</h2>
+                <h3 class="food-price">Rs.560.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="nonveg-images/muttonkabab1.jfif" class="food-img">
+                <h2 class="food-title">Mutton Kabab</h2>
+                <h3 class="food-price">Rs.550.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="nonveg-images/prawnfry1.jfif" class="food-img">
+                <h2 class="food-title">Prawn Fry</h2>
+                <h3 class="food-price">Rs.530.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="nonveg-images/pomfretfishcurry.jfif" class="food-img">
+                <h2 class="food-title">Fish Curry</h2>
+                <h3 class="food-price">Rs.510.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="nonveg-images/salmonfish2.jfif" class="food-img">
+                <h2 class="food-title">Salmon Fish</h2>
+                <h3 class="food-price">Rs.550.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--======= Script File ======-->
+    <script src="javascript/script.js"></script>
+</body>
+</html>

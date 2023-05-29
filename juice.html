@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juices</title>
+    <link rel="stylesheet" href="food-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .food{
+            height: 230vh;
+            background: linear-gradient(rgba(12,11,9,0.5),rgba(12,11,9,0.5)),url("home-images/juice-home.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <section class="food">
+
+        <!--======= Header Section ======-->
+
+        <header>
+            <h1>Juices</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="veg.html">Veg</a></li>
+                    <li><a href="non-veg.html">Non-Veg</a></li>
+                    <li><a href="ice-cream.html">Ice-Creams</a></li>
+                    <li><a href="milkshake.html">Milkshakes</a></li>
+                    <li><a href="juice.html">Juices</a></li>
+                    <li><a href="cake.html">Cakes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <button class="btn-cart">Cart
+                        <i class="fa fa-cart-plus" id="cart-icon"></i>
+                    </button>
+                    <div class="cart-count">0</div>                    
+                </ul>
+            </nav>
+            
+            <!--======= Cart Section ======-->
+
+            <div class="cart">
+                <div class="cart-title">Cart items</div>
+                <div class="cart-content">
+                    <!-- <div class="cart-box">
+                        <img src="veg-images/carrotrice2.jfif" class="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-food-title">Carrot Rice</div>
+                            <div class="price-box">
+                                <div class="cart-price">Rs.130</div>
+                                <div class="cart-amt">Rs.130</div>
+                            </div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <i class="fa fa-trash cart-remove"></i>
+                    </div>
+
+                    <div class="cart-box">
+                        <img src="veg-images/chanamasala.jfif" class="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-food-title">Carrot Rice</div>
+                            <div class="price-box">
+                                <div class="cart-price">Rs.260</div>
+                                <div class="cart-amt">Rs.260</div>
+                            </div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <i class="fa fa-trash cart-remove"></i>
+                    </div> -->
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">Rs.0</div>
+                </div>
+                <button class="btn-buy">Place Order</button>
+                <i class="fa fa-close" id="cart-close"></i>
+            </div>
+
+        </header>
+
+        <!--======= Food Section ======-->
+
+        <div class="container">
+            <div class="food-box">
+                <img src="juice-images/apple1.jfif" class="food-img">
+                <h2 class="food-title">Apple</h2>
+                <h3 class="food-price">Rs.450.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="juice-images/beetroot.jfif" class="food-img">
+                <h2 class="food-title">Beetroot</h2>
+                <h3 class="food-price">Rs.200.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="juice-images/blueberry1.jfif" class="food-img">
+                <h2 class="food-title">Blueberry</h2>
+                <h3 class="food-price">Rs.250.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="juice-images/carrot.jfif" class="food-img">
+                <h2 class="food-title">Carrot</h2>
+                <h3 class="food-price">Rs.400.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="juice-images/grape1.jfif" class="food-img">
+                <h2 class="food-title">Grape</h2>
+                <h3 class="food-price">Rs.250.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="juice-images/greengrape1.jfif" class="food-img">
+                <h2 class="food-title">Green grape</h2>
+                <h3 class="food-price">Rs.270.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="juice-images/juice/lemon.jpeg" class="food-img">
+                <h2 class="food-title">Lemon</h2>
+                <h3 class="food-price">Rs.280.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="juice-images/mango2.jfif" class="food-img">
+                <h2 class="food-title">Mango</h2>
+                <h3 class="food-price">Rs.350.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="juice-images/musk2.jfif" class="food-img">
+                <h2 class="food-title">Musk melon</h2>
+                <h3 class="food-price">Rs.350.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="juice-images/orange1.jfif" class="food-img">
+                <h2 class="food-title">Orange</h2>
+                <h3 class="food-price">Rs.340.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="juice-images/papaya1.jfif" class="food-img">
+                <h2 class="food-title">Papaya</h2>
+                <h3 class="food-price">Rs.250.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="juice-images/juice/pine-apple.jpeg" class="food-img">
+                <h2 class="food-title">Pineapple</h2>
+                <h3 class="food-price">Rs.350.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="juice-images/pomegranate1.jfif" class="food-img">
+                <h2 class="food-title">Pomegranate</h2>
+                <h3 class="food-price">Rs.400.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="juice-images/strawberry1.jfif" class="food-img">
+                <h2 class="food-title">Strawberry</h2>
+                <h3 class="food-price">Rs.450.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="juice-images/tartcherry.jfif" class="food-img">
+                <h2 class="food-title">Tart cherry</h2>
+                <h3 class="food-price">Rs.350.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="juice-images/watermelon1.jfif" class="food-img">
+                <h2 class="food-title">Watermelon</h2>
+                <h3 class="food-price">Rs.400.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="juice-images/juice/avocado.jpeg" class="food-img">
+                <h2 class="food-title">Avacado</h2>
+                <h3 class="food-price">Rs.350.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="juice-images/juice/banana.jpeg" class="food-img">
+                <h2 class="food-title">Banana</h2>
+                <h3 class="food-price">Rs.380.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="juice-images/juice/kiwi.jpeg" class="food-img">
+                <h2 class="food-title">Kiwi</h2>
+                <h3 class="food-price">Rs.390.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            <div class="food-box">
+                <img src="juice-images/juice/litchie.jpeg" class="food-img">
+                <h2 class="food-title">Litchie</h2>
+                <h3 class="food-price">Rs.490.00</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!--======= Script File ======-->
+    <script src="javascript/script.js"></script>
+</body>
+</html>
